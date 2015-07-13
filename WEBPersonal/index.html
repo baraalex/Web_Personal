@@ -5,20 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
     <title>Alejandro Barahona</title>
 
-    <!-- Basic  -->
-    <!--CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <!--Bootstrap social CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap-social/bootstrap-social.css">
+
+    <!--MetisMenu CSS -->
+    <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.min.css">
+
+    <!--Timeline CSS-->
+    <link rel="stylesheet" href="dist/css/timeline.css">
+
+    <!--Custom CSS -->
+    <link rel="stylesheet" href="dist/css/sb-admin-2.css">
+
+    <!--Morris Charts CSS -->
+    <link rel="stylesheet" href="bower_components/morrisjs/morris.css">
+
+    <!--Custom Fonts -->
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!--Custom CSS-->
     <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/theme.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
-    <!--JavaScript -->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <!--jQuery -->
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!--Bootstrap Core JavaScript  -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!--Metis Menu Plugin JavaScript  -->
+    <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!--Morris Charts JavaScript  -->
+    <script src="bower_components/raphael/raphael-min.js"></script>
+
+    <script src="bower_components/morrisjs/morris.min.js"></script>
+
+    <script src="js/morris-data.js"></script>
+
+    <!--Custom Theme JavaScript  -->
+    <script src="dist/js/sb-admin-2.js"></script>
+
+
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class=" navbar navbar-inverse navbar-fixed-top
+    ">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
@@ -42,69 +77,222 @@
 
 <div class="container theme-showcase" role="main">
 
+    <div class="panel panel-info" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel-heading">
+            <i class="fa fa-info-circle fa-fw"></i> Responsive Timeline
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-badge primary collapsed" role="button" id="headingOne" data-toggle="collapse"
+                         data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne" href="#collapseOne">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="timeline-panel collapse in" id="collapseOne" role="tabpanel"
+                         aria-labelledby="headingOne">
+                        <div class="timeline-heading">
+                            <h3 class="timeline-title">Información personal</h3>
 
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-        <div class="panel panel-default">
-            <div class="panel-heading collapsed" role="button" id="headingOne" data-toggle="collapse"
-                 data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne" href="#collapseOne">
-                <h4 class="panel-title">
-                    Información personal
-                </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                    labore sustainable VHS.
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading collapsed" role="button" id="headingTwo" data-toggle="collapse"
-                 data-parent="#accordion"
-                 aria-expanded="false" aria-controls="collapseTwo" href="#collapseTwo">
-                <h4 class="panel-title">
-                    Informacion Academica
-                </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                    labore sustainable VHS.
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading collapsed" role="button" id="headingThree" data-toggle="collapse"
-                 data-parent="#accordion"
-                 aria-expanded="false" aria-controls="collapseThree" href="#collapseThree">
-                <h4 class="panel-title">
-                    Informacion Laboral
-                </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                <div class="panel-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                    labore sustainable VHS.
-                </div>
-            </div>
+                            <p class="centerText">
+                                <img src="images/yo.png" alt="User Avatar" class="img-circle">
+                            </p>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="centerText tooltip-demo">
+                                <a href="https://github.com/baraalex" data-original-title="Github"
+                                   type="button" class="btn btn-social-icon btn-github" data-toggle="tooltip"
+                                   data-placement="left" title="">
+                                    <i class="fa fa-github"></i></a>
+                                <a href="https://es.linkedin.com/pub/alejandro-barahona-alvarez/62/65b/b44"
+                                   data-original-title="LinkedIn"
+                                   type="button" class="btn btn-social-icon btn-linkedin" data-toggle="tooltip"
+                                   data-placement="top" title=""><i class="fa fa-linkedin"></i></a>
+                                <a href="mailto:alex.grajera@gmail.com" data-original-title="Email"
+                                   type="button" class="btn btn-social-icon btn-google-plus"
+                                   data-toggle="tooltip" data-placement="right" title="">
+                                    <i class="fa fa-envelope"></i></a>
+                            </p>
+
+                            <p class="justifyText"></p>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge warning collapsed" role="button" id="headingTwo" data-toggle="collapse"
+                         data-parent="#accordion" aria-expanded="false" aria-controls="collapseTwo"
+                         href="#collapseTwo">
+                        <i class="fa fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-panel collapse" id="collapseTwo" role="tabpanel"
+                         aria-labelledby="headingTwo">
+                        <div class="timeline-heading">
+                            <h3 class="timeline-title">Estudios</h3>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="justifyText">
+                            <h4>Grado en Ingeniería Informática</h4>
+
+                            <p><span>Desde 2009</span></p>
+
+                            <p>
+                                <a href="http://www.etsiinf.upm.es/">ETS de Ingenieros Informáticos</a> (Facultad de
+                                Informática) <a href="upm.es">Universidad Politécnica de Madrid</a><br>
+
+                            <div>
+                                <ul>
+                                    <span class="bold">Optativas reseñables cursadas:</span>
+                                    <li>Diseño de aplicaciones web</li>
+                                    <li>Web Semántica y Linked Data</li>
+                                    <li>Sistemas inteligentes</li>
+                                    <li>Middleware</li>
+                                </ul>
+                            </div>
+                            </p>
+                            <br>
+                            <h4>Bachillerato de Ciencias de la Salud</h4>
+
+                            <p><span>2003 - 2009</span></p>
+
+                            <p><a href="iessierradeayllon.centros.educa.jcyl.es/">IES Sierra de Ayllón</a>
+                            </p>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="timeline-badge info collapsed" role="button" id="headingThree"
+                         data-toggle="collapse"
+                         data-parent="#accordion" aria-expanded="false" aria-controls="collapseThree"
+                         href="#collapseThree"><i class="fa fa-language "></i>
+                    </div>
+                    <div class="timeline-panel collapse" id="collapseThree" role="tabpanel"
+                         aria-labelledby="headingThree">
+                        <div class="timeline-heading">
+                            <h3 class="timeline-title">Idiomas</h3>
+                        </div>
+                        <div class="timeline-body">
+                            <div class="table-responsive mitabla">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Idioma</th>
+                                        <th colspan="2">Comprender</th>
+                                        <th colspan="2">Hablar</th>
+                                        <th>Escribir</th>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <th>Auditiva</th>
+                                        <th>Lectora</th>
+                                        <th>Interacción</th>
+                                        <th>Expresión</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Español</td>
+                                        <td>Nativo</td>
+                                        <td>Nativo</td>
+                                        <td>Nativo</td>
+                                        <td>Nativo</td>
+                                        <td>Nativo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Inglés</td>
+                                        <td>B2</td>
+                                        <td>B2</td>
+                                        <td>B2</td>
+                                        <td>B2</td>
+                                        <td>B2</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="timeline-inverted">
+                    <div class="timeline-badge success collapsed" role="button" id="headingFour" data-toggle="collapse"
+                         data-parent="#accordion" aria-expanded="false" aria-controls="collapseFour"
+                         href="#collapseFour">
+                        <i class="fa fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-panel collapse" id="collapseFour" role="tabpanel"
+                         aria-labelledby="headingFour">
+                        <div class="timeline-heading">
+                            <h3 class="timeline-title">Experiencia laboral</h3>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="justifyText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+                                dolorem quibusdam,
+                                tenetur
+                                commodi provident cumque magni voluptatem libero, quis rerum. Fugiat esse debitis optio,
+                                tempore. Animi officiis alias, officia repellendus.</p>
+
+                            <p class="justifyText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+                                maiores odit qui est
+                                tempora
+                                eos, nostrum provident explicabo dignissimos debitis vel! Adipisci eius voluptates, ad
+                                aut
+                                recusandae minus eaque facere.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="timeline-badge collapsed" role="button" id="headingFive"
+                         data-toggle="collapse"
+                         data-parent="#accordion" aria-expanded="false" aria-controls="collapseFive"
+                         href="#collapseFive"><i class="fa fa-desktop"></i>
+                    </div>
+                    <div class="timeline-panel collapse" id="collapseFive" role="tabpanel"
+                         aria-labelledby="headingFive">
+                        <div class="timeline-heading">
+                            <h3 class="timeline-title">Otras habilidades</h3>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="justifyText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+                                obcaecati, quaerat
+                                tempore
+                                officia voluptas debitis consectetur culpa amet, accusamus dolorum fugiat, animi dicta
+                                aperiam,
+                                enim incidunt quisquam maxime neque eaque.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge info collapsed" role="button" id="headingSix"
+                         data-toggle="collapse"
+                         data-parent="#accordion" aria-expanded="false" aria-controls="collapseSix"
+                         href="#collapseSix"><i class="fa fa-trophy"></i>
+                    </div>
+                    <div class="timeline-panel collapse" id="collapseSix" role="tabpanel"
+                         aria-labelledby="headingSix">
+                        <div class="timeline-heading">
+                            <h3 class="timeline-title">Otras habilidades</h3>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="justifyText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+                                obcaecati, quaerat
+                                tempore
+                                officia voluptas debitis consectetur culpa amet, accusamus dolorum fugiat, animi dicta
+                                aperiam,
+                                enim incidunt quisquam maxime neque eaque.</p>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
         </div>
     </div>
-
 </div>
+<!--Custom Theme JavaScript  -->
+<script src="js/custom.js"></script>
+
 </body>
 </html>

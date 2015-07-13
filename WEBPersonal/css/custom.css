@@ -1,0 +1,44 @@
+.timeline > li {
+    margin-bottom: 4em;
+}
+
+.timeline {
+    padding: 0px 0px;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.justifyText {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.img-circle {
+    min-width: 5em;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .img-circle {
+        max-width: 15em;
+    }
+}
+
+.mitabla > .table > thead:first-child > tr:first-child > th {
+    text-align: center;
+}
+
+.mitabla > .table > thead {
+    background-color: #5BC0DE !important;
+    color: white;
+}
+
+.mitabla > .table > tbody {
+    text-align: center;
+}
