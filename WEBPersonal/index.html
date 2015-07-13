@@ -75,11 +75,11 @@
     </div>
 </nav>
 
-<div class="container theme-showcase" role="main">
+<div class="container theme-showcase tooltip-demo" role="main">
 
     <div class="panel panel-info" id="accordion" role="tablist" aria-multiselectable="true">
         <div class="panel-heading">
-            <i class="fa fa-info-circle fa-fw"></i> Responsive Timeline
+            <i class="fa fa-info-circle fa-fw"></i>Curriculum Vitae
         </div>
         <!-- /.panel-heading -->
         <div class="panel-body">
@@ -87,7 +87,8 @@
                 <li>
                     <div class="timeline-badge primary collapsed" role="button" id="headingOne" data-toggle="collapse"
                          data-parent="#accordion" aria-expanded="false" aria-controls="collapseOne" href="#collapseOne">
-                        <i class="fa fa-user"></i>
+                        <i class="fa fa-user" data-original-title="Información personal" data-toggle="tooltip"
+                           data-placement="right" title=""></i>
                     </div>
                     <div class="timeline-panel collapse in" id="collapseOne" role="tabpanel"
                          aria-labelledby="headingOne">
@@ -99,7 +100,7 @@
                             </p>
                         </div>
                         <div class="timeline-body">
-                            <p class="centerText tooltip-demo">
+                            <p class="centerText ">
                                 <a href="https://github.com/baraalex" data-original-title="Github"
                                    type="button" class="btn btn-social-icon btn-github" data-toggle="tooltip"
                                    data-placement="left" title="">
@@ -114,7 +115,12 @@
                                     <i class="fa fa-envelope"></i></a>
                             </p>
 
-                            <p class="justifyText"></p>
+                            <p class="justifyText">
+                                <span class="bold">Edad:  </span><span id="age"></span> (24/07/1991)<br>
+                                <span class="bold">Correo:  </span>
+                                <a href="mailto:alex.grajera@gmail.com">alex.grajera@gmail.com</a><br>
+                                <span class="bold">Carnet de conducir:  </span>Si, sin coche propio
+                            </p>
 
                         </div>
                     </div>
@@ -123,7 +129,8 @@
                     <div class="timeline-badge warning collapsed" role="button" id="headingTwo" data-toggle="collapse"
                          data-parent="#accordion" aria-expanded="false" aria-controls="collapseTwo"
                          href="#collapseTwo">
-                        <i class="fa fa-graduation-cap"></i>
+                        <i class="fa fa-graduation-cap" data-original-title="Estudios" data-toggle="tooltip"
+                           data-placement="left" title=""></i>
                     </div>
                     <div class="timeline-panel collapse" id="collapseTwo" role="tabpanel"
                          aria-labelledby="headingTwo">
@@ -134,15 +141,15 @@
                             <p class="justifyText">
                             <h4>Grado en Ingeniería Informática</h4>
 
-                            <p><span>Desde 2009</span></p>
+                            <p>Desde 2009</p>
 
                             <p>
                                 <a href="http://www.etsiinf.upm.es/">ETS de Ingenieros Informáticos</a> (Facultad de
-                                Informática) <a href="upm.es">Universidad Politécnica de Madrid</a><br>
+                                Informática) <a href="http://www.upm.es">Universidad Politécnica de Madrid</a><br>
 
                             <div>
+                                <span class="bold">Optativas reseñables cursadas:</span>
                                 <ul>
-                                    <span class="bold">Optativas reseñables cursadas:</span>
                                     <li>Diseño de aplicaciones web</li>
                                     <li>Web Semántica y Linked Data</li>
                                     <li>Sistemas inteligentes</li>
@@ -153,9 +160,9 @@
                             <br>
                             <h4>Bachillerato de Ciencias de la Salud</h4>
 
-                            <p><span>2003 - 2009</span></p>
+                            <p>2003 - 2009</p>
 
-                            <p><a href="iessierradeayllon.centros.educa.jcyl.es/">IES Sierra de Ayllón</a>
+                            <p><a href="http://iessierradeayllon.centros.educa.jcyl.es/">IES Sierra de Ayllón</a>
                             </p>
                             </p>
                         </div>
@@ -163,10 +170,11 @@
                 </li>
 
                 <li>
-                    <div class="timeline-badge info collapsed" role="button" id="headingThree"
-                         data-toggle="collapse"
+                    <div class="timeline-badge info collapsed" role="button" id="headingThree" data-toggle="collapse"
                          data-parent="#accordion" aria-expanded="false" aria-controls="collapseThree"
-                         href="#collapseThree"><i class="fa fa-language "></i>
+                         href="#collapseThree">
+                        <i class="fa fa-language " data-original-title="Idiomas" data-toggle="tooltip"
+                           data-placement="right" title=""></i>
                     </div>
                     <div class="timeline-panel collapse" id="collapseThree" role="tabpanel"
                          aria-labelledby="headingThree">
@@ -220,7 +228,8 @@
                     <div class="timeline-badge success collapsed" role="button" id="headingFour" data-toggle="collapse"
                          data-parent="#accordion" aria-expanded="false" aria-controls="collapseFour"
                          href="#collapseFour">
-                        <i class="fa fa-briefcase"></i>
+                        <i class="fa fa-briefcase" data-original-title="Experiencia laboral" data-toggle="tooltip"
+                           data-placement="left" title=""></i>
                     </div>
                     <div class="timeline-panel collapse" id="collapseFour" role="tabpanel"
                          aria-labelledby="headingFour">
@@ -228,27 +237,39 @@
                             <h3 class="timeline-title">Experiencia laboral</h3>
                         </div>
                         <div class="timeline-body">
-                            <p class="justifyText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
-                                dolorem quibusdam,
-                                tenetur
-                                commodi provident cumque magni voluptatem libero, quis rerum. Fugiat esse debitis optio,
-                                tempore. Animi officiis alias, officia repellendus.</p>
+                            <p class="justifyText">
+                            <h4>Desarrollador</h4>
 
-                            <p class="justifyText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-                                maiores odit qui est
-                                tempora
-                                eos, nostrum provident explicabo dignissimos debitis vel! Adipisci eius voluptates, ad
-                                aut
-                                recusandae minus eaque facere.</p>
+                            <p class="bold"><a href="http://gib.fi.upm.es/">Grupo de Informatica
+                                Biomedica</a></p>
+
+                            <p>02/2014 - 07/2015</p>
+
+                            <div>
+                                <span class="bold">Proyectos</span>
+                                <ul>
+                                    <li>P-medicine</li>
+                                </ul>
+                                <br>
+                                <span class="bold">Otras tareas</span>
+                                <ul>
+                                    <li>Mantenimiento de servidores linux y Windows</li>
+                                    <li>Mantenimiento de bases de datos</li>
+                                </ul>
+
+                            </div>
+                            </p>
+                            </p>
                         </div>
                     </div>
                 </li>
 
                 <li>
-                    <div class="timeline-badge collapsed" role="button" id="headingFive"
-                         data-toggle="collapse"
+                    <div class="timeline-badge collapsed" role="button" id="headingFive" data-toggle="collapse"
                          data-parent="#accordion" aria-expanded="false" aria-controls="collapseFive"
-                         href="#collapseFive"><i class="fa fa-desktop"></i>
+                         href="#collapseFive">
+                        <i class="fa fa-desktop" data-original-title="Otras habilidades"
+                           data-toggle="tooltip" data-placement="right" title=""></i>
                     </div>
                     <div class="timeline-panel collapse" id="collapseFive" role="tabpanel"
                          aria-labelledby="headingFive">
@@ -256,33 +277,23 @@
                             <h3 class="timeline-title">Otras habilidades</h3>
                         </div>
                         <div class="timeline-body">
-                            <p class="justifyText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
-                                obcaecati, quaerat
-                                tempore
-                                officia voluptas debitis consectetur culpa amet, accusamus dolorum fugiat, animi dicta
-                                aperiam,
-                                enim incidunt quisquam maxime neque eaque.</p>
+                            <p class="justifyText"></p>
                         </div>
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-badge info collapsed" role="button" id="headingSix"
-                         data-toggle="collapse"
-                         data-parent="#accordion" aria-expanded="false" aria-controls="collapseSix"
-                         href="#collapseSix"><i class="fa fa-trophy"></i>
+                    <div class="timeline-badge info collapsed" role="button" id="headingSix" data-toggle="collapse"
+                         data-parent="#accordion" aria-expanded="false" aria-controls="collapseSix" href="#collapseSix">
+                        <i class="fa fa-trophy" data-original-title="Premios" data-toggle="tooltip"
+                           data-placement="left" title=""></i>
                     </div>
                     <div class="timeline-panel collapse" id="collapseSix" role="tabpanel"
                          aria-labelledby="headingSix">
                         <div class="timeline-heading">
-                            <h3 class="timeline-title">Otras habilidades</h3>
+                            <h3 class="timeline-title">Premios</h3>
                         </div>
                         <div class="timeline-body">
-                            <p class="justifyText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
-                                obcaecati, quaerat
-                                tempore
-                                officia voluptas debitis consectetur culpa amet, accusamus dolorum fugiat, animi dicta
-                                aperiam,
-                                enim incidunt quisquam maxime neque eaque.</p>
+                            <p class="justifyText"></p>
                         </div>
                     </div>
                 </li>
