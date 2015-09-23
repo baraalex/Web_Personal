@@ -42,7 +42,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-
+# Idea folder end files
 .idea/
-
 *.iml
